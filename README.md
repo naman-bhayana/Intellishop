@@ -43,10 +43,6 @@ The IntelliShop system combines mobile technology, AI algorithms, and robotic sy
 
 Our custom trained object detection model identifies products in real-time, enabling automated inventory management and smart shopping assistance.
 
-<div align="center">
-  <img src="./assets/objectDetectionTraining.png" alt="Object Detection Training" width="600">
-</div>
-
 ### 📹 Training Video
 
 Check out our AI model training process:
@@ -133,7 +129,3 @@ For full documentation about the project, check out our:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgements
-
-- Thanks to all contributors who have participated in this project.
-- Special thanks to the robotics and AI research teams who made this integration possible. 
