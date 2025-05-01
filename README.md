@@ -9,7 +9,8 @@ A smart retail experience powered by AI and robotics.
 ## 📋 Project Overview
 
 <div align="center">
-  <img src="./assets/Ai%20%26%20Robotics%20based%20IntelliShop.pdf">
+  <img src="./assets/Ai & Robotics based IntelliShop.pdf">
+  
     <p><em>Project Overview </em></p>
   </a>
 </div>
