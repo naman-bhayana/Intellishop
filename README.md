@@ -26,7 +26,7 @@ IntelliShop is a revolutionary retail application that integrates AI and robotic
   <p><em>Robot Implementation</em></p>
 </div>
 
-### 🎥 Working Robot Demo
+### 🎥 Video- Working Robot Demo
 
 Watch our robot in action as it detects desired objects, picks them up, and navigates to target locations:
 
