@@ -1,5 +1,5 @@
 // import AsyncStorage from '@react-native-async-storage/async-storage'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Alert, ImageBackground, Image, FlatList } from 'react-native'
 import { Button } from 'react-native'
 import { ScrollView } from 'react-native'
@@ -11,18 +11,40 @@ import IconRobot from 'react-native-vector-icons/MaterialCommunityIcons'
 import shopData from '../../data/shopData'
 import ShopCard from '../../components/home/shopCard'
 import Icon1 from 'react-native-vector-icons/MaterialIcons'
+import axios from 'axios'
 
 export default function HomeScreen({ navigation }) {
     // const dispatch = useDispatch()
     // const userSignin = useSelector((state) => state.userSignin)
     // const { userInfo } = userSignin
     // console.log(userInfo)
+    const [IconRobotname, setIconRobotname] = useState('robot-off-outline')
+    useEffect(() => {
+        connectRobot()
+    }, []);
+    // setInterval(() => {
+    //     connectRobot()
+    // }, 5000);
     const logout = () => {
+        navigation.replace('Login')
         alert('Logged out')
     //     dispatch(signout())
     }
     const connectRobot = ()=>{
-        alert('Robot Service not currently Running!')
+        axios.get('https://unipedia-8dca5-default-rtdb.firebaseio.com/robot/ip.json').then(res=>{
+            const src =`http://${res.data}/status`
+            console.log(src)
+            axios.get(src).then(res=>{
+                if(res.status == 200){
+                    setIconRobotname('robot-love-outline');
+                }else{
+                    setIconRobotname('robot-off-outline');
+                    alert('Robot Service not currently Running!')
+                }
+            }).catch(e=>{
+                console.log(e)
+            })
+        })
     }
     return (
         <View style={styles.container}>
@@ -36,9 +58,12 @@ export default function HomeScreen({ navigation }) {
                         <Icon name='account-circle' size={38} />
                         {/* <Text style={styles.headerText}>Hi, {userInfo && userInfo.name}</Text> */}
                     </View>
-                    <TouchableOpacity onPress={connectRobot} style={{ flexDirection: 'row', alignItems: 'center' }}>
-                        <IconRobot name='robot-off-outline' size={38} />
-                        {/* <Text style={styles.headerText}>Hi, {userInfo && userInfo.name}</Text> */}
+                    <TouchableOpacity onPress={connectRobot} style={{ alignItems: 'center' }}>
+                        <IconRobot name={IconRobotname} size={38} />
+                        {
+                            IconRobotname == 'robot-love-outline'&&
+                            <Text >Connected!</Text>
+                        }
                     </TouchableOpacity>
                     <View>
                         <Icon name='logout' onPress={logout} size={25} style={{ textAlign: 'center' }} />

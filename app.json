@@ -1,32 +1,37 @@
 {
-    "expo": {
-        "name": "IntelliShop",
-        "slug": "IntelliShop",
-        "version": "1.0.0",
-        "orientation": "portrait",
-        "icon": "./assets/header-logo.jpg",
-        "userInterfaceStyle": "light",
-        "splash": {
-            "image": "./assets/splash.png",
-            "resizeMode": "contain",
-            "backgroundColor": "#ffffff"
-        },
-        "assetBundlePatterns": [
-            "**/*"
-        ],
-        "ios": {
-            "supportsTablet": true
-        },
-        "android": {
-            "softwareKeyboardLayoutMode": "pan",
-            "adaptiveIcon": {
-                "foregroundImage": "./assets/header-logo.jpg",
-                "backgroundColor": "#ffffff"
-            },
-            "package": "com.intellishop"
-        },
-        "web": {
-            "favicon": "./assets/favicon.png"
-        }
+  "expo": {
+    "name": "IntelliShop",
+    "slug": "IntelliShop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/header-logo.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "pan",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/header-logo.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.intellishop"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "db587e08-0547-438e-ac49-21df6243ef66"
+      }
     }
+  }
 }

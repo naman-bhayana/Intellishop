@@ -1,9 +1,21 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Icon1 from 'react-native-vector-icons/MaterialIcons'
+import axios from 'axios'
 
 const OrderConf = ({ route, navigation }) => {
+    useEffect(()=>{
+        axios.get('https://unipedia-8dca5-default-rtdb.firebaseio.com/robot/ip.json').then(res=>{
+            const src =`http://${res.data}/run`
+            console.log(src)
+            axios.get(src).then(res=>{
+                
+            }).catch(e=>{
+                console.log(e)
+            })
+        })
+    },[])
     return (
         <View style={{ padding: 5 }}>
             <Icon name='check-decagram' style={{ fontSize: 40, color: 'green', textAlign: 'center', margin: 20 }} />
