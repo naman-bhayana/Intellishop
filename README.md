@@ -6,6 +6,15 @@ A smart retail experience powered by AI and robotics.
   <img src="./assets/icon.png" alt="IntelliShop Logo" width="200">
 </div>
 
+## 📋 Project Overview
+
+<div align="center">
+  <a href="./assets/Ai%20%26%20Robotics%20based%20IntelliShop.pdf">
+    <img src="./assets/systemArchitecture.png" alt="Project Poster" width="800">
+    <p><em>Project Overview - Click for detailed presentation</em></p>
+  </a>
+</div>
+
 ## 📱 About
 
 IntelliShop is a revolutionary retail application that integrates AI and robotics to enhance the shopping experience. The application allows users to place orders, track deliveries, and interact with robotic assistants in store.
@@ -74,7 +83,6 @@ Check out our AI model training process:
 For full documentation about the project, check out our:
 
 - 📑 [AI & Robotics based IntelliShop Presentation](./assets/Ai%20%26%20Robotics%20based%20IntelliShop.pdf)
-- 📊 [Project Presentation](./assets/project%20ppt.pptx)
 - 📝 [Complete Project Report](./assets/Project%20Report.docx)
 
 ## 🚀 Getting Started
