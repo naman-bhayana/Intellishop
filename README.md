@@ -3,7 +3,7 @@
 A smart retail experience powered by AI and robotics.
 
 <div align="center">
-  <img src="./assets/icon.png" alt="IntelliShop Logo" width="200">
+  <img src="./assets/icon.png" alt="IntelliShop Logo" width="400">
 </div>
 
 ## 📋 Project Overview
