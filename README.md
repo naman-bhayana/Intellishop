@@ -101,18 +101,11 @@ For full documentation about the project, check out our:
    ```
    npm install
    ```
-   or
-   ```
-   yarn install
-   ```
+
 
 3. Start the development server
    ```
    npm start
-   ```
-   or
-   ```
-   yarn start
    ```
 
 ## 💻 Technologies Used
