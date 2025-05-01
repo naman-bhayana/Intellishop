@@ -32,7 +32,6 @@ Watch our robot in action as it detects desired objects, picks them up, and navi
 
 <div align="center">
   <a href="https://drive.google.com/file/d/1CxIL6LfEUVjQOvAsG3xFWevNpdCRH7L0/view?usp=sharing" target="_blank">
-    <img src="./assets/robot.png" alt="Robot Demo Video Thumbnail" width="600">
     <p>Click to watch the robot demonstration</p>
   </a>
 </div>
