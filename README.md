@@ -3,6 +3,8 @@
 ![GitHub issues](https://img.shields.io/github/issues/naman-bhayana/Intellishop)
 ![GitHub stars](https://img.shields.io/github/stars/naman-bhayana/Intellishop)
 ![GitHub forks](https://img.shields.io/github/forks/naman-bhayana/Intellishop)
+
+
 A smart retail experience powered by AI and robotics.
 
 <div align="center">
